@@ -7,13 +7,13 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 * João Pedro Mairinque 
 * Nome completo do aluno 2
 * Nome completo do aluno 3
-* Nome completo do aluno 4
+* Nome completo do DCJEWFJIEWHNFIOJWEOIJFEaluno 4
 * Ana Luiza Machado Alves
 
 ## Professores responsáveis
 
 * Nome completo do professor 1
-* Nome completo do professor 2
+* Nome completo do professoFEWFEWFEWFEWr 2
 
 ## Instruções de utilização
 
