@@ -5,9 +5,9 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 ## Alunos integrantes da equipe
 
 * João Pedro Mairinque 
-* Nome completo do aluno 2
+* Nome completo do aluno 2git
 * Nome completo do aluno 3
-* Nome completo do DCJEWFJIEWHNFIOJWEOIJFEaluno 4
+* Nome completo do DCJEFJIEWHNFIOJWEOIJFEaluno 4
 * Ana Luiza Machado Alves
 
 ## Professores responsáveis

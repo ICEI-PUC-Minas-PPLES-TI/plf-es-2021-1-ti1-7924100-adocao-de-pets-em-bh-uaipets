@@ -1,0 +1,88 @@
+/*geral*/
+body{
+    font-family:cursive;
+}
+.amarelo{
+    color:rgb(221, 162, 0);
+}
+.centro{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.margem-top{
+    margin-top:30px;
+}
+.margem-bottom{
+    margin-bottom:30px;
+}
+
+.just{
+    text-align: justify;
+}
+
+.icone{
+    font-size: 50px;;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+    color:white;
+}
+
+/*navbar*/
+.navbar-brand{
+    color:black !important;
+}
+
+.fa-moon, .fa-bell, .fa-cog, .white{
+    color:white;
+}
+
+.gray-borda{
+    color:rgb(92, 92, 92);
+    -webkit-text-stroke: 1px white;
+}
+
+.navbar-brand{
+    font-size:30px;
+}
+
+#horizontal, ul li{
+    list-style: none !important;
+    display:inline !important;
+}
+
+@media screen and (max-width:991px){
+    #nomobile{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width:992px){
+    #yesmobile{
+        display:none !important;
+    }
+}
+
+/*main*/
+
+.login{
+    width:50%;
+    margin: 0 auto;
+    margin-top:20px;
+
+}
+
+
+
+/*Footer*/
+.footer{
+    background-color: rgb(221, 162, 0);
+    padding:5px;
+    margin-top:10px;
+}
