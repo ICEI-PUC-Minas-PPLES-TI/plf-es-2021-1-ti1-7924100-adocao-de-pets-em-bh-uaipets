@@ -19,9 +19,9 @@
 <body>
 
     <header class="header">
-        <div class="container-fluid">
+        <div class="container">
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><b>UaiPets</b> <i class="fas fa-paw"></i></a>
 
@@ -115,68 +115,78 @@
 
 
     <main class="main">
+
         <div class="container">
-            <div class="row">
-
-                <!--Carousel-->
-                <div class="col-12">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <img src="imagens_index/carousel1.jpg" class="d-block w-100 img-carousel" alt="...">
-
-                            </div>
-                            <div class="carousel-item">
-                                <img src="imagens_index/carousel2.jfif" class="d-block w-100 img-carousel" alt="...">
-
-                            </div>
-                            <div class="carousel-item">
-                                <img src="imagens_index/carousel3.jpg" class="d-block w-100 img-carousel" alt="...">
-
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+            <!--inicio-->
+            <section class="inicio margem-bottom-10px">
+                <div class="row ">
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-5" id="texto-inicio">
+                        <h1 class="roxo">#adote</h1>
+                        <h1 class="titulo1 gray-borda">Encontre um Pet para você!</h1>
+                        <div class="inicio-p white texto-ajude">Ajude a encontrar um lar para os animais que precisam.
+                            Nos
+                            ajude a ajudá-los.</div>
+                        <button type="button" class="btn btn-warning vermais">
+                            Ver mais
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </div>
+                </div>
+            </section>
 
-                        <div class="main-text">
+            <!--Carousel-->
 
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-4" id="texto-carousel">
-                                <h1 class="amarelo">#adote</h1>
-                                <h1 class="titulo1 gray-borda">Encontre um Pet para você!</h1>
-                                <p class="carousel-p white">Ajude a encontrar um lar para os animais que precisam. Nos
-                                    ajude a ajudá-los.</p>
-                                <button type="button" class="btn btn-warning vermais">
-                                    Ver mais
-                                </button>
-                            </div>
-
-
+            <div id="carouselExampleDark" class="carousel carousel-dark slide margem-bottom-10px"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="imagens_index/carousel1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <div class="icone-grande roxo borda-texto"><i class="fas fa-dog"></i> + 250</div>
+                            <h1 class="texto-carousel roxo borda-texto"> Pets adotados com sucesso na plataforma</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="imagens_index/carousel2.jfif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <div class="icone-grande roxo borda-texto"><i class="fas fa-paw"></i> + 500</div>
+                            <h1 class="texto-carousel roxo borda-texto">Usuários cadastrados na plataforma</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens_index/carousel3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <div class="icone-grande roxo borda-texto"><i class="fas fa-handshake"></i> +40</div>
+                            <h1 class="texto-carousel roxo borda-texto">Parcerias com ONGs em Belo Horizonte</h1>
                         </div>
                     </div>
                 </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
+            <!--Novos Pets-->
             <div class="row bg1">
-                <div class="centro">
-                    <h1 class="amarelo titulo1">Novos Pets</h1>
+                <div class="margem-top">
+                    <h1 class="amarelo titulo1">Novos Pets <button type="button" class="btn btn-warning bg-roxo white">
+                            Ver mais
+                        </button></h1>
+
                 </div>
 
                 <!--Cards-->
@@ -184,7 +194,7 @@
                     <div class="card">
                         <img src="imagens_index/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Lila</h5>
+                            <h5 class="card-title roxo">Lila</h5>
                             <p class="card-text">
                                 <i class="fas fa-map-marker-alt"></i> Nova Suiça
                             </p>
@@ -192,11 +202,19 @@
                                 <i class="fas fa-paw"></i> Gato - 2 anos
                             </p>
                         </div>
-                        <div class="card-bottom">
-                            <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
-                            <div class="coracao">
-                                <i class="fas fa-heart"></i>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10">
+                                    <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                                <div class="col-2 me-auto">
+                                    <div class="coracao">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -204,7 +222,7 @@
                     <div class="card">
                         <img src="imagens_index/cardp.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Filhotes de calopsita</h5>
+                            <h5 class="card-title roxo">Filhotes de calopsita</h5>
                             <p class="card-text">
                                 <i class="fas fa-map-marker-alt"></i> Castelo
                             </p>
@@ -212,10 +230,16 @@
                                 <i class="fas fa-paw"></i> Pássaro - 3 semanas
                             </p>
                         </div>
-                        <div class="card-bottom">
-                            <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
-                            <div class="coracao">
-                                <i class="fas fa-heart"></i>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10">
+                                    <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                                <div class="col-2 me-auto">
+                                    <div class="coracao">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -224,7 +248,7 @@
                     <div class="card">
                         <img src="imagens_index/card2.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Max</h5>
+                            <h5 class="card-title roxo">Max</h5>
                             <p class="card-text">
                                 <i class="fas fa-map-marker-alt"></i> Santa Inês
                             </p>
@@ -232,10 +256,16 @@
                                 <i class="fas fa-paw"></i> Hamster - 5 meses
                             </p>
                         </div>
-                        <div class="card-bottom">
-                            <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
-                            <div class="coracaonull">
-                                <i class="far fa-heart"></i>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10">
+                                    <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                                <div class="col-2 me-auto">
+                                    <div class="coracao">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,7 +274,7 @@
                     <div class="card">
                         <img src="imagens_index/card3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Trovão</h5>
+                            <h5 class="card-title roxo">Trovão</h5>
                             <p class="card-text">
                                 <i class="fas fa-map-marker-alt"></i> Industrial
                             </p>
@@ -252,86 +282,196 @@
                                 <i class="fas fa-paw"></i> Cão - 5 anos e 3 meses
                             </p>
                         </div>
-                        <div class="card-bottom">
-                            <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
-                            <div class="coracaonull">
-                                <i class="far fa-heart"></i>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-10">
+                                    <a href="#" class="card-link"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                                <div class="col-2 me-auto">
+                                    <div class="coracao">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-                <!--Sobre-->
-                <div class="row margem-top bg2">
 
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
-                        <h1 class="centro amarelo">Fique ligado!</h1>
-                        <div class="row margem-top">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado ">
-                                <img src="/imagens_index/adotado.jfif" alt="" class="borda">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
-                                <h3>Mas por que adotar?</h3>
-                                <p>Se ainda te faltam motivos, leia esta matéria</p>
-                                <a href="https://www.casapraticaqualita.com.br/noticia/6-motivos-para-adotar-um-animal-de-estimacao_a1323/1#:~:text=Adotar%20um%20animal%20%C3%A9%20uma%20grande%20responsabilidade%2C%20e,de%20fome%20e%20possivelmente%20sofrendo%20de%20maus%20tratos."
-                                    class="materia"><button type="button" class="btn btn-secondary">Leia
-                                        mais</button></a>
-                            </div>
-                        </div>
-                        <div class="row margem-top margem-bottom">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
-                                <img src="/imagens_index/meadota.png" alt="" class="borda">
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
-                                <h3>Abandono em BH</h3>
-                                <p>Por que é algo a se preocupar? Descubra mais!</p>
-                                <a href="https://www.otempo.com.br/coronavirus/pandemia-de-coronavirus-eleva-abandono-de-animais-em-belo-horizonte-alerta-ong-1.2316258"
-                                    class="materia"><button type="button" class="btn btn-secondary">Leia
-                                        Mais</button></a>
-                            </div>
-                        </div>
-                    </div>
+            <!--Descubra os animais perto de vc-->
+            <div class="row margem-top bg-roxo pd-t descubra">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <h1 class="amarelo centro borda-texto">Descubra os animais perto de você!</h1>
 
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 ms-auto">
-                        <h1 class="centro amarelo">A iniciativa</h1>
-                        <p class="just">Somos alunos do primeiro período de Engenharia de Software da PUC Minas e
-                            desenvolvemos esta
-                            aplicação como parte do estudo referente à disciplina TIAW. Nosso objetivo é prover uma
-                            aplicação que possa ajudar as pessoas a adotarem e colocarem pets para adoção, promovendo
-                            assim o aumento de animais sendo cuidados com carinho em lares adotivos</p>
+                    <p class="just inicio-p margem-bottom white">Agora ficou mais fácil receber notícias de pets
+                        anunciados próximo a
+                        você! Se inscreva e receba
+                        os seguintes benefícios:</p>
 
-                        <h4>Alguma Sugestão?</h4>
+                    <div class="margem-left">
+                        <h4 class="white"><i class="fas fa-tag amarelo"></i> Código promocional</h4>
+                        <p class="white margem-bottom">para compra de itens no aplicativo da UaiPetstore</p>
 
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="form" placeholder="Sugestão" aria-label="Search">
-                            <button class="btn btn-outline-secondary" type="submit">Enviar</button>
-                        </form>
-                        <div class="margem-top">
-                            <div class="row">
-                                <div class="col-4 centro"><i class="fab fa-facebook icone"></i></div>
-                                <div class="col-4 centro"><i class="fab fa-instagram icone"></i></div>
-                                <div class="col-4 centro"><i class="fab fa-whatsapp icone"></i></div>
-                            </div>
+                        <h4 class="white"><i class="fas fa-syringe amarelo"></i> Desconto em clínicas veterinárias </h4>
+                        <p class="white margem-bottom">associadas ao
+                            UaiPets para castração e vacinação do seu animalzinho </p>
 
-
-
-                        </div>
-
+                        <h4 class="white"><i class="fas fa-comments amarelo"></i> Dicas sobre cuidados de pets</h4>
+                        <p class="white margem-bottom">com o famoso adestrador de animais
+                            Fulaner de Tao </p>
                     </div>
 
 
                 </div>
-            
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+
+                    <div class="card formulario">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputNome1" class="form-label">Nome</label>
+                                    <input type="nome" class="form-control" id="exampleInputNome1"
+                                        aria-describedby="nomeHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">Nós não iremos divulgar seus email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputCEP1" class="form-label">Código Postal</label>
+                                    <input type="CEP" class="form-control" id="exampleInputCEP1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputbairro1" class="form-label">Bairro</label>
+                                    <input type="bairro" class="form-control" id="exampleInputbairro1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputendereco1" class="form-label">Endereço</label>
+                                    <input type="endereco" class="form-control" id="exampleInputendereco1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputcomplemento1" class="form-label">Complemento</label>
+                                    <input type="complemento" class="form-control" id="exampleInputcomplemento1">
+                                </div>
+
+                                <button type="submit" class="btn btn-warning">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Localização-->
+
+            <div class="row bg-amarelo margem-top  pd-t pd-b ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                    <h1 class="roxo centro borda-texto ">Localização em tempo real</h1>
+                    <p class="just inicio-p margem-bottom white">Aqui você pode conferir a localização dos pets que estão para adoção em:</p>
+                    <div class="margem-left">
+                        <h4 class="white">
+                            <i class="fas fa-hands-helping roxo"></i> ONGs 
+                        </h4>
+                        <p class="white  margem-bottom">de proteção e resgate de animais de Belo Horizonte</p>
+                        <h4 class="white">
+                            <i class="fas fa-clinic-medical roxo"></i> PetShops e Clínicas Veterinárias 
+                         </h4>
+                         <p class="white  margem-bottom">que prestam serviços de adoção, vacinação e castração de animais</p>
+                         <h4 class="white">
+                            <i class="fas fa-map-marked-alt roxo"></i> Endereços de doadores
+                         </h4>
+                         <p class="white  margem-bottom">cadastrados para que você possa buscar seus novos pets</p>
+                        
+                    </div>
+
+                    <div class="margem-top margem-bottom">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Consulte seu bairro" aria-label="Search">
+                            <button class="btn btn-outline-light bg-roxo" type="submit"><i class="fas fa-search"></i></button>
+                          </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                    <img src="/imagens_index/bh.png" alt="" class="bh">
+                </div>
+            </div>
+
+            <!--Sobre-->
+            <div class="row margem-top bg2">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+                    <h1 class="centro amarelo">Fique ligado!</h1>
+                    <div class="row margem-top">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado ">
+                            <img src="/imagens_index/adotado.jfif" alt="" class="borda">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
+                            <h3>Mas por que adotar?</h3>
+                            <p>Se ainda te faltam motivos, leia esta matéria</p>
+                            <a href="https://www.casapraticaqualita.com.br/noticia/6-motivos-para-adotar-um-animal-de-estimacao_a1323/1#:~:text=Adotar%20um%20animal%20%C3%A9%20uma%20grande%20responsabilidade%2C%20e,de%20fome%20e%20possivelmente%20sofrendo%20de%20maus%20tratos."
+                                class="materia"><button type="button" class="btn btn-secondary bg-roxo">Leia
+                                    mais</button></a>
+                        </div>
+                    </div>
+                    <div class="row margem-top margem-bottom">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
+                            <img src="/imagens_index/meadota.png" alt="" class="borda">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
+                            <h3>Abandono em BH</h3>
+                            <p>Por que é algo a se preocupar? Descubra mais!</p>
+                            <a href="https://www.otempo.com.br/coronavirus/pandemia-de-coronavirus-eleva-abandono-de-animais-em-belo-horizonte-alerta-ong-1.2316258"
+                                class="materia"><button type="button" class="btn btn-secondary bg-roxo">Leia
+                                    Mais</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 ms-auto">
+                    <h1 class="centro amarelo">A iniciativa</h1>
+                    <p class="just">Somos alunos do primeiro período de Engenharia de Software da PUC Minas e
+                        desenvolvemos esta
+                        aplicação como parte do estudo referente à disciplina TIAW. Nosso objetivo é prover uma
+                        aplicação que possa ajudar as pessoas a adotarem e colocarem pets para adoção, promovendo
+                        assim o aumento de animais sendo cuidados com carinho seus novos lares</p>
+
+                    <h4 class="margem-top">Alguma Sugestão?</h4>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="form" placeholder="Sugestão" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                    </form>
+                    <div class="margem-top">
+                        <div class="row">
+                            <div class="col-4 centro"><i class="fab fa-facebook icone"></i></div>
+                            <div class="col-4 centro"><i class="fab fa-instagram icone"></i></div>
+                            <div class="col-4 centro"><i class="fab fa-whatsapp-square icone"></i></div>
+                        </div>
 
 
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <footer class="footer">
+                <p class="centro">Copyright 2021 - Puc Minas - Todos os direitos reservados</p>
+            </footer>
+        
+           
 
     </main>
 
-    <footer class="footer">
-        <p class="centro">Copyright 2021 - Puc Minas - Todos os direitos reservados</p>
-    </footer>
-
+    
+ 
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"

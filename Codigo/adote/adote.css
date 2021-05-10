@@ -2,9 +2,15 @@
 body{
     font-family:cursive;
 }
+
 .amarelo{
     color:rgb(221, 162, 0);
 }
+
+.roxo{
+    color:#955AF5 !important;
+}
+
 .centro{
     text-align:center;
     margin-top:10px;
@@ -17,6 +23,10 @@ body{
     margin-bottom:30px;
 }
 
+.margem-bottom-10px{
+    margin-bottom: 10px;
+}
+
 .just{
     text-align: justify;
 }
@@ -25,14 +35,13 @@ body{
     font-size: 50px;;
 }
 
-a{
-    color:white;
-    text-decoration:none;
+
+/*Background*/
+
+.bg-roxo{
+    background-color:#955AF5 !important;
 }
 
-a:hover{
-    color:white;
-}
 
 /*navbar*/
 .navbar-brand{
@@ -69,23 +78,16 @@ a:hover{
     }
 }
 
-/*main*/
+/*card*/
 
-.login{
-    width:50%;
-    margin: 0 auto;
-    margin-top:20px;
-
+.card-img-top{
+    height:300px;
+   
 }
-
-
 
 /*Footer*/
 .footer{
     background-color: rgb(221, 162, 0);
     padding:5px;
     margin-top:10px;
-    position:absolute;
-    bottom:0;
-    width:100%;
 }

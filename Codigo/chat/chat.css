@@ -1,0 +1,176 @@
+/*geral*/
+body{
+    font-family:sans-serif;
+}
+
+
+.gray{
+    color:gray;
+}
+.amarelo{
+    color:rgb(221, 162, 0);
+}
+.centro{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.margem-top{
+    margin-top:30px;
+}
+.margem-bottom{
+    margin-bottom:30px;
+}
+
+.just{
+    text-align: justify;
+}
+
+.icone{
+    font-size: 50px;
+}
+
+@media screen and (max-width:991px){
+    .icone{
+        display:none;
+    }
+
+    .ultimo-tex{
+        display:none;
+    }
+
+    .some-mobile{
+        display:none;
+    }
+
+    .estrela{
+        display:none;
+    }
+
+    .chat-direita{
+        display:none;
+    }
+
+    .chat-centro{
+        border-left: 1px solid #e9ecef;
+    }
+    
+}
+
+.texto-direita{
+    text-align: right;
+}
+
+.margem-bottom-10px{
+    margin-bottom:10px;
+}
+
+
+/*navbar*/
+.navbar-brand{
+    color:black !important;
+}
+
+.fa-moon, .fa-bell, .fa-cog, .white{
+    color:white;
+}
+
+.gray-borda{
+    color:rgb(92, 92, 92);
+    -webkit-text-stroke: 1px white;
+}
+
+.navbar-brand{
+    font-size:30px;
+}
+
+#horizontal, ul li{
+    list-style: none !important;
+    display:inline !important;
+}
+
+@media screen and (max-width:991px){
+    #nomobile{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width:991px){
+    #yesmobile{
+        display:none !important;
+    }
+}
+
+/*chat esquerda*/
+
+.tempo, .ultimo-tex{
+    font-size:xx-small;
+    color:gray;
+}
+
+.pesquisa-caixa, .chat-esq{
+    margin-bottom:10px;
+}
+
+.borda-esq {
+    border-left-color: rgb(221, 162, 0);
+    border-left-width: 5px;;
+}
+
+.borda-bottom{
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #e9ecef;    
+}
+
+
+/*chat mid*/
+.nome-chat-mid{
+    font-size:xx-large;
+}
+
+.adotante{
+    font-size: large;
+}
+
+.estrela{
+    font-size:large;
+}
+
+.bg-secondary{
+    background-color: lightgray !important;
+}
+
+.img-chat{
+    width: 100%;
+    height:100%;
+}
+.user{
+    width:120%;    
+    border-radius:50%;
+}
+
+.usergrande{
+    width:70%;    
+    border-radius:50%;
+    margin-bottom: 10px;
+}
+
+.chat-centro{
+   
+    border-right: 1px solid #e9ecef;
+}
+
+/*direita*/
+
+.img-bio-small{
+    width:30%
+}
+
+/*Footer*/
+.footer{
+    background-color: rgb(221, 162, 0);
+    padding:5px;
+    margin-top:10px;
+    width:100%;
+}
+
