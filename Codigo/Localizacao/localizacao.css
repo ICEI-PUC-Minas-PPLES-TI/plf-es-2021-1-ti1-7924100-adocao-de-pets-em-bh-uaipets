@@ -1,0 +1,142 @@
+/*geral*/
+
+body{
+    font-family:cursive;
+}
+
+.roxo{
+    color:#955AF5 !important;
+}
+
+.bg-roxo{
+    background-color:#955AF5 !important; ;
+}
+
+.amarelo{
+    color:rgb(221, 162, 0);
+}
+
+.bg-amarelo{
+    background-color:rgb(221, 162, 0) ;
+}
+.centro{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.margem-top{
+    margin-top:30px;
+}
+.margem-bottom{
+    margin-bottom:30px;
+}
+
+.margem-bottom-10px{
+    margin-bottom: 10px;
+}
+
+.just{
+    text-align: justify;
+}
+
+.icone{
+    font-size: 50px;;
+}
+
+.icone-peq{
+    font-size:10px;
+}
+
+
+/*navbar*/
+
+.navbar{
+    margin-bottom:10px;
+}
+.navbar-brand{
+    color:black !important;
+}
+
+.fa-moon, .fa-bell, .fa-cog, .white{
+    color:white;
+}
+
+.gray-borda{
+    color:rgb(92, 92, 92);
+    -webkit-text-stroke: 1px white;
+}
+
+.borda-texto{
+    -webkit-text-stroke: 1px white;
+}
+
+.navbar-brand{
+    font-size:30px;
+}
+
+#horizontal, ul li{
+    list-style: none !important;
+    display:inline !important;
+}
+
+@media screen and (max-width:991px){
+    #nomobile{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width:991px){
+    #yesmobile{
+        display:none !important;
+    }
+}
+
+      
+/*MAPA*/
+      
+      
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 70%;
+        width:84.5%;
+        margin: 0 auto;
+       }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        
+      }
+
+      .custom-map-control-button {
+        appearance: button;
+        background-color: #fff;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin: 10px;
+        padding: 0 0.5em;
+        height: 40px;
+        font: 400 18px Roboto, Arial, sans-serif;
+        overflow: hidden;
+      }
+      .custom-map-control-button:hover {
+        background: #ebebeb;
+      }
+   
+/*Main*/
+
+.imagem_localizacao{
+   height:100%;
+   width:100%;  
+}
+
+/*Footer*/
+.footer{
+    background-color: rgb(221, 162, 0);
+    padding:5px;
+    margin-top:10px;
+}

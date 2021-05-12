@@ -1,6 +1,9 @@
 /*geral*/
+
+
 body{
     font-family:cursive;
+    
 }
 
 .amarelo{
@@ -9,6 +12,9 @@ body{
 
 .roxo{
     color:#955AF5 !important;
+}
+.black{
+    color:black !important;
 }
 
 .centro{
@@ -84,6 +90,30 @@ body{
     height:300px;
    
 }
+
+.hover-white:hover{
+    color:rgb(221, 162, 0) !important;
+}
+
+/*modal*/
+.imagem-modal{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.botao-adotar{
+    color:white;
+    text-decoration: none;
+}
+
+.botao-adotar:hover{
+    color:white;
+}
+
+.btn-roxo:hover{
+ background-color: #804ed1 !important ;
+}
+
 
 /*Footer*/
 .footer{

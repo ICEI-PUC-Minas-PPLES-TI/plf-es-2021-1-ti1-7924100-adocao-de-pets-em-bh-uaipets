@@ -1,6 +1,9 @@
 
 
 /*geral*/
+
+
+
 body{
     font-family:cursive;
 }
@@ -279,14 +282,10 @@ body{
 }
 
 .formulario{
-    height:630px;
+    height:800px;
 }
 
-.descubra{
-    background-image: url(/imagens_index/happydog-removebg-preview\ \(2\).png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
+
 
 @media screen and (max-width:1000px){
     .descubra{

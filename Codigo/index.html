@@ -322,6 +322,8 @@
                             Fulaner de Tao </p>
                     </div>
 
+                    <img src="/imagens_index/dog_cat-removebg-preview.png" alt="" id="nomobile">
+
 
                 </div>
 
@@ -339,23 +341,32 @@
                                     <label for="exampleInputEmail1" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">Nós não iremos divulgar seus email.</div>
+                                    <div id="emailHelp" class="form-text">Nós não iremos divulgar seu email.</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputCEP1" class="form-label">Código Postal</label>
-                                    <input type="CEP" class="form-control" id="exampleInputCEP1">
+                                    <label for="cep" class="form-label">Código Postal</label>
+                                    <input type="text" class="form-control" maxlength="9" id="cep">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="logradouro" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="logradouro">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputbairro1" class="form-label">Bairro</label>
-                                    <input type="bairro" class="form-control" id="exampleInputbairro1">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputendereco1" class="form-label">Endereço</label>
-                                    <input type="endereco" class="form-control" id="exampleInputendereco1">
+                                    <label for="bairro" class="form-label">Bairro</label>
+                                    <input type="text" class="form-control" id="bairro">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputcomplemento1" class="form-label">Complemento</label>
-                                    <input type="complemento" class="form-control" id="exampleInputcomplemento1">
+                                    <input type="text" class="form-control" id="exampleInputcomplemento1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="localidade" class="form-label">Cidade</label>
+                                    <input type="text" class="form-control" id="localidade">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="uf" class="form-label">Estado</label>
+                                    <input type="text" class="form-control" id="uf">
                                 </div>
 
                                 <button type="submit" class="btn btn-warning">Enviar</button>
@@ -462,13 +473,14 @@
 
             </div>
 
-            <footer class="footer">
-                <p class="centro">Copyright 2021 - Puc Minas - Todos os direitos reservados</p>
-            </footer>
-        
+           
            
 
     </main>
+    <footer class="footer container">
+        <p class="centro">Copyright 2021 - Puc Minas - Todos os direitos reservados</p>
+    </footer>
+
 
     
  
@@ -477,6 +489,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
+        <script src="scriptmain.js"></script>
 </body>
 
 </html>
