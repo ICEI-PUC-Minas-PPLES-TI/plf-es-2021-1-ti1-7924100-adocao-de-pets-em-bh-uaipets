@@ -27,3 +27,79 @@ cep.addEventListener("blur", () => {
 });
 
 //fetch()  https://viacep.com.br/ws/01001000/json/
+
+
+//Nightmode
+
+var timesClicked = 0;
+function nightMode() {
+    timesClicked++;
+    if (timesClicked % 2 == 0) {
+        document.body.style.background = 'white';
+    } else {
+        document.body.style.background = 'black';
+    }
+   
+}
+
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
+//Local Storage
+
+function leDados () {
+  let strDados = localStorage.getItem('db');
+  let objDados = {infopessoal};
+
+  if (strDados) {
+      objDados = JSON.parse (strDados);
+  }
+  else {
+      objDados = { infopessoal: [  
+                  ]}
+  }
+
+  return objDados;
+}
+
+function salvaDados (dados) {
+  localStorage.setItem ('db', JSON.stringify (dados));
+}
+
+function incluirDados (){
+  // Ler os dados do localStorage
+  let objDados = leDados();
+
+  // Incluir novos dados
+  let strNome = document.getElementById ('exampleInputNome1').value;
+  let strEmail = document.getElementById ('exampleInputEmail1').value;
+  let strcep = document.getElementById ('cep').value;
+  let strEndereço = document.getElementById ('logradouro').value;
+  let strBairro = document.getElementById ('bairro').value;
+  let strComplemento = document.getElementById ('exampleInputcomplemento1').value;
+  let strCidade = document.getElementById ('localidade').value;
+  let strEstado = document.getElementById ('uf').value;
+
+  let novosdados = {
+      nome: strNome,
+      Email: strEmail,
+      CódigoPostal: strcep,
+      Endereço: strEndereço,
+      Bairro: strBairro,
+      Complemento: strComplemento,
+      Cidade: strCidade,
+      Estado: strEstado
+  };
+  objDados.infopessoal.push (novosdados);
+
+  // Salvar os dados no localStorage novamente
+  salvaDados (objDados);
+
+  // Atualiza os dados da tela
+  imprimeDados ();
+}
+// Configura os botões
+document.getElementById ('btnEnviar').addEventListener ('click', incluirDados);

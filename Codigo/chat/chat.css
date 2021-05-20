@@ -12,6 +12,9 @@ body{
 .amarelo{
     color:rgb(221, 162, 0);
 }
+.bg-roxo{
+    background-color:#955AF5 !important; ;
+}
 .centro{
     text-align:center;
     margin-top:10px;
@@ -176,3 +179,33 @@ body{
     width:100%;
 }
 
+
+/*scrollbar*/
+.scroll {
+    height: 500px;
+    overflow-y: auto;
+}
+.scrollbar-primary::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; }
+    
+    .scrollbar-primary::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f19d00; }
+    
+    .scrollbar-primary {
+    scrollbar-color: #f19d00 #F5F5F5;
+    }
+
+
+   .send-button{
+       border-radius:50px !important;
+   }
+
+   .area-mensagem{
+       color:black;
+   }
+   
+   .typing-box{
+       width:100%;
+   }

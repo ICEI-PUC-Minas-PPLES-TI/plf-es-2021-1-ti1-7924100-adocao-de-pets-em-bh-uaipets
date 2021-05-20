@@ -1,0 +1,11 @@
+ver 1.0 - criação do index.html/index.css
+ver 2.0 - ajustes de responsividade do index e criação da pagina de login (sairlogin.html/sairlogin.css)
+ver 3.0 - ajuste da posição do footer em sairlogin; fonte:sans-serif; criação página do chat
+ver 4.0 - adição do da página de adoção; finalização do novo index; ajustes de responsividade
+ver 5.0 - criação da página de localização; adição do modal em adoção
+ver 6.0 - atualização página de login; deletei pastas teste e index_antigo; criação pagina de cadastro; 
+	mudança do dropdown de adoção por selectpicker; centralização do body nas responsividades; mudança foto index
+ver 6.1 - adição de API de cep no index
+ver 7.0 - adição scrollbar no chat; container no mapa em localização;nightmode e notificações; chat funcional, porém servidor ainda não
+	está funcionando;
+ver 8.0 - correção de links; adição de funcionalidades

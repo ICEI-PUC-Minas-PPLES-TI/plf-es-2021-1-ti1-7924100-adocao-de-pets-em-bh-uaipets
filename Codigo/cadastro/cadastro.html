@@ -14,6 +14,7 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="cadastro.css">
+    <script src="scriptlogin.js"></script>
 </head>
 
 <body>
@@ -36,25 +37,25 @@
 
                     <form class="login">
                         <div class="form-group margem-bottom-10px">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control bg-gray" id="exampleInputEmail1"
+                            <label for="exampleInputEmail">Email</label>
+                            <input type="email" class="form-control bg-gray" id="exampleInputEmail"
                                 aria-describedby="emailHelp" placeholder="email@exemplo.com">
 
                         </div>
                         <div class="form-group margem-bottom-10px">
-                            <label for="exampleInputPassword1">Nome Completo</label>
-                            <input type="password" class="form-control bg-gray" id="exampleInputPassword1"
+                            <label for="exampleInputname">Nome Completo</label>
+                            <input type="text" class="form-control bg-gray" id="exampleInputname"
                                 placeholder="Nome">
                         </div>
                         <div class="form-group margem-bottom-10px">
-                            <label for="exampleInputPassword1">Telefone</label>
-                            <input type="password" class="form-control bg-gray" id="exampleInputPassword1"
+                            <label for="exampleInputphone">Telefone</label>
+                            <input type="number" class="form-control bg-gray" id="exampleInputphone"
                                 placeholder="(DDD) 99999-9999">
                         </div>
                         
                         <div class="form-group margem-bottom-10px">
-                            <label for="exampleInputPassword1">Senha</label>
-                            <input type="password" class="form-control bg-gray" id="exampleInputPassword1"
+                            <label for="exampleInputPassword">Senha</label>
+                            <input type="password" class="form-control bg-gray" id="exampleInputPassword"
                                 placeholder="Insira sua senha">
                         </div>
                         
@@ -67,8 +68,8 @@
 
                         <!--Botoes-->
                         <div class="centro">
-                            <button type="submit" class="btn btn-light btn-roxo bg-roxo btn-mid"><a
-                                    href="../index.html">Cadastrar</a></button>
+                            <button type="submit" onclick="incluirCadastro()" class="btn btn-light btn-roxo bg-roxo btn-mid"><a
+                                href="../index.html">Cadastrar</a></button>
                                     <span>
                                         <button type="submit" class="btn btn-light bg-gray btn-small">
                                             <img src="/sairlogin/imagens_sairlogin/google.png" alt="" class="google">
@@ -76,6 +77,7 @@
                                     </span>
 
                         </div>
+                        <script>console.log(leDados())</script>
 
                     </form>
                 </div>
@@ -108,6 +110,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+        <script> src="scrptlogin.js"</script>
+
+
+        
+
+        
 </body>
 
 </html>

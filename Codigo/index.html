@@ -30,10 +30,14 @@
                     <ul class="ms-auto mb-2 mb-lg-0" id="yesmobile">
 
                         <li>
-                            <button type="button" class="btn"><i class="far fa-moon"></i></button>
+                            <button id="nightMode" type="button" class="btn" onclick="nightMode()"><i
+                                    class="far fa-moon"></i></button>
                         </li>
+
                         <li>
-                            <button type="button" class="btn"><i class="far fa-bell"></i></button>
+                            <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="bottom" data-bs-content="0 novas notificações"><i
+                                    class="far fa-bell"></i></button>
                         </li>
                         <li>
                             <button type="button" class="btn"><i class="fas fa-cog"></i></button>
@@ -46,7 +50,7 @@
                                     <i class="fas fa-user-circle"></i>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item" href="/chat/chat.html">Chat</a></li>
                                     <li><a class="dropdown-item" href="#">Favoritos</a></li>
                                     <li><a class="dropdown-item" href="sairlogin/sairlogin.html">Sair</a></li>
                                 </ul>
@@ -70,7 +74,7 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Adote</a>
+                                <a class="nav-link" href="/adote/adote.html">Adote</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sobre</a>
@@ -85,10 +89,13 @@
                     <ul class="ms-auto mb-2 mb-lg-0" id="nomobile">
 
                         <li>
-                            <button type="button" class="btn"><i class="far fa-moon"></i></button>
+                            <button type="button" class="btn" onclick="nightMode()"><i class="far fa-moon"></i></button>
                         </li>
                         <li>
-                            <button type="button" class="btn"><i class="far fa-bell"></i></button>
+                            <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="bottom" data-bs-content="0 novas notificações"><i
+                                    class="far fa-bell"></i></button>
+
                         </li>
                         <li>
                             <button type="button" class="btn"><i class="fas fa-cog"></i></button>
@@ -100,7 +107,7 @@
                                     <i class="fas fa-user-circle"></i> Alberto Silva
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item" href="/chat/chat.html">Chat</a></li>
                                     <li><a class="dropdown-item" href="#">Favoritos</a></li>
                                     <li><a class="dropdown-item" href="sairlogin/sairlogin.html">Sair</a></li>
                                 </ul>
@@ -183,7 +190,7 @@
             <!--Novos Pets-->
             <div class="row bg1">
                 <div class="margem-top">
-                    <h1 class="amarelo titulo1">Novos Pets <button type="button" class="btn btn-warning bg-roxo white">
+                    <h1 class="amarelo titulo1">Novos Pets <button type="button" class="btn btn-light bg-roxo white">
                             Ver mais
                         </button></h1>
 
@@ -347,7 +354,7 @@
                                     <label for="cep" class="form-label">Código Postal</label>
                                     <input type="text" class="form-control" maxlength="9" id="cep">
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="logradouro" class="form-label">Endereço</label>
                                     <input type="text" class="form-control" id="logradouro">
@@ -369,7 +376,7 @@
                                     <input type="text" class="form-control" id="uf">
                                 </div>
 
-                                <button type="submit" class="btn btn-warning">Enviar</button>
+                                <button type="submit" class="btn btn-warning" id="btnEnviar">Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -382,33 +389,42 @@
             <div class="row bg-amarelo margem-top  pd-t pd-b ">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                     <h1 class="roxo centro borda-texto ">Localização em tempo real</h1>
-                    <p class="just inicio-p margem-bottom white">Aqui você pode conferir a localização dos pets que estão para adoção em:</p>
+                    <p class="just inicio-p margem-bottom white">Aqui você pode conferir a localização dos pets que
+                        estão para adoção em:</p>
                     <div class="margem-left">
                         <h4 class="white">
-                            <i class="fas fa-hands-helping roxo"></i> ONGs 
+                            <i class="fas fa-hands-helping roxo"></i> ONGs
                         </h4>
                         <p class="white  margem-bottom">de proteção e resgate de animais de Belo Horizonte</p>
                         <h4 class="white">
-                            <i class="fas fa-clinic-medical roxo"></i> PetShops e Clínicas Veterinárias 
-                         </h4>
-                         <p class="white  margem-bottom">que prestam serviços de adoção, vacinação e castração de animais</p>
-                         <h4 class="white">
+                            <i class="fas fa-clinic-medical roxo"></i> PetShops e Clínicas Veterinárias
+                        </h4>
+                        <p class="white  margem-bottom">que prestam serviços de adoção, vacinação e castração de animais
+                        </p>
+                        <h4 class="white">
                             <i class="fas fa-map-marked-alt roxo"></i> Endereços de doadores
-                         </h4>
-                         <p class="white  margem-bottom">cadastrados para que você possa buscar seus novos pets</p>
-                        
+                        </h4>
+                        <p class="white  margem-bottom">cadastrados para que você possa buscar seus novos pets</p>
+
                     </div>
 
                     <div class="margem-top margem-bottom">
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Consulte seu bairro" aria-label="Search">
-                            <button class="btn btn-outline-light bg-roxo" type="submit"><i class="fas fa-search"></i></button>
-                          </form>
-                    </div>
+                            <input class="form-control me-2" type="search" placeholder="Consulte seu bairro"
+                                aria-label="Search">
+                            <button class="btn btn-outline-light bg-roxo" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
+                        <div class="centro"><button class="btn btn-outline-light bg-roxo margem-top">
+                            <a href="/Localizacao/localizacao.html">Clique aqui para consultar o Mapa</a>
+                        </button>
+                    </div></div>
+                        
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-                    <img src="/imagens_index/bh.png" alt="" class="bh">
+                    <a href="/Localizacao/localizacao.html"><img src="/imagens_index/bh.png" alt="" class="bh"></a>
+                    
                 </div>
             </div>
 
@@ -455,7 +471,7 @@
 
                     <form class="d-flex">
                         <input class="form-control me-2" type="form" placeholder="Sugestão" aria-label="Search">
-                        <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                        <button class="btn btn-outline-secondary bg-roxo white" type="submit">Enviar</button>
                     </form>
                     <div class="margem-top">
                         <div class="row">
@@ -473,8 +489,8 @@
 
             </div>
 
-           
-           
+
+
 
     </main>
     <footer class="footer container">
@@ -482,14 +498,16 @@
     </footer>
 
 
-    
- 
+
+
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
-        <script src="scriptmain.js"></script>
+    <script src="scriptmain.js"></script>
+
+
 </body>
 
 </html>
