@@ -1,4 +1,7 @@
 /*geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 html{
     height:100%;
     display: flex;
@@ -7,7 +10,8 @@ html{
 }
 
 body{
-    font-family:cursive;
+    font-family:Poppins, sans-serif;
+  
     background-image: url(/sairlogin/imagens_sairlogin/bg-login.png);
     background-repeat: no-repeat;
     background-size: cover;
