@@ -6,6 +6,11 @@ body{
     
 }
 
+
+.tabencontros{
+
+    width: 800px !important;
+}
 .amarelo{
     color:rgb(221, 162, 0);
 }
