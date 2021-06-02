@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre</title>
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-        <!--FontAwesome-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-        <!--CSS-->
-        <link rel="stylesheet" href="sobre.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="sobre.css">
+</head>
+
 <body>
     <header class="header">
         <div class="container">
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html"><b>UaiPets</b> <i class="fas fa-paw"></i></a>
+                    <a class="navbar-brand" href="index.html"><b>UaiPets</b> <i class="fas fa-paw"></i></a>
 
                     <!--Versão mobile-->
 
                     <ul class="ms-auto mb-2 mb-lg-0" id="yesmobile">
 
                         <li>
-                            <button type="button" class="btn"><i class="far fa-moon"></i></button>
+                            <button id="nightMode" type="button" class="btn" onclick="nightMode()"><i
+                                    class="far fa-moon"></i></button>
                         </li>
+
                         <li>
-                            <button type="button" class="btn"><i class="far fa-bell"></i></button>
+                            <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="bottom" data-bs-content="0 novas notificações"><i
+                                    class="far fa-bell"></i></button>
                         </li>
                         <li>
                             <button type="button" class="btn"><i class="fas fa-cog"></i></button>
@@ -43,9 +49,9 @@
                                     <i class="fas fa-user-circle"></i>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item" href="/chat/chat.html">Chat</a></li>
                                     <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                                    <li><a class="dropdown-item" href="../sairlogin/sairlogin.html">Sair</a></li>
+                                    <li><a class="dropdown-item" href="sairlogin/sairlogin.html">Sair</a></li>
                                 </ul>
                             </span>
 
@@ -64,16 +70,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="../index.html">Início</a>
+                                <a class="nav-link" aria-current="page" href="../index.html">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Adote</a>
+                                <a class="nav-link" href="../adote/adote.html">Adote</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Sobre</a>
+                                <a class="nav-link active" href="sobre.html">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Apoio</a>
+                                <a class="nav-link " href="../apoio/apoio.html">Apoio</a>
                             </li>
                         </ul>
                     </div>
@@ -82,10 +88,13 @@
                     <ul class="ms-auto mb-2 mb-lg-0" id="nomobile">
 
                         <li>
-                            <button type="button" class="btn"><i class="far fa-moon"></i></button>
+                            <button type="button" class="btn" onclick="nightMode()"><i class="far fa-moon"></i></button>
                         </li>
                         <li>
-                            <button type="button" class="btn"><i class="far fa-bell"></i></button>
+                            <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
+                                data-bs-placement="bottom" data-bs-content="0 novas notificações"><i
+                                    class="far fa-bell"></i></button>
+
                         </li>
                         <li>
                             <button type="button" class="btn"><i class="fas fa-cog"></i></button>
@@ -97,9 +106,9 @@
                                     <i class="fas fa-user-circle"></i> Alberto Silva
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                                    <li><a class="dropdown-item" href="/chat/chat.html">Chat</a></li>
                                     <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                                    <li><a class="dropdown-item" href="../sairlogin/sairlogin.html">Sair</a></li>
+                                    <li><a class="dropdown-item" href="sairlogin/sairlogin.html">Sair</a></li>
                                 </ul>
                             </span>
                         </li>
@@ -110,11 +119,108 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main container">
+
+        <!--Sobre-->
+        <section class="sobre bg-amarelo">
+            
+        <div class="row margem-left">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row margem-top">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <h1 class="borda-texto roxo margem-top"> <span class="titulo_sobrenos">Sobre nós</span></h1>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <img src="imagens_sobre/patinhas.png" alt="" class="img_patinhas margem-left">
+                    </div>
+                </div>
+               
+                <h2 class="margem-top">Uma equipe <span class="roxo">apaixonada</span> pelos animais</h2>
+
+                <p>
+                    <br>
+                    Somos alunos da Pontifícia Universidade Católica de Minas Gerais (PUC Minas) e estamos cursando o primeiro período de 
+                    Engenharia de Software. Nosso site é resultado de um vasto estudo realizado na disciplina de Trabalho Interdisciplinar de Aplicações
+                    Web (TIAW), em que partimos de um problema a ser pesquisado usando ferramentas de Design Thinking. Após compreendermos os detalhes 
+                    das personas que são afetadas por esta condição, iniciamos a geração da solução: o <span class="roxo">UAIPETS!</span>
+                    <br><br>
+                    Nós do UaiPets nos unimos não apenas com intuito de ampliar nossos conhecimentos, como também pelo nosso comprometimento em querer
+                    fornecer uma solução simples e moderna para auxiliar os animais a serem adotados, assim como as pessoas envolvidas neste processo.
+                    <br><br>
+                    Se você compartilha da nossa paixão, venha se juntar a nós! 
+                    <span><button type="button" class="btn btn-light bg-roxo">Faça parte da nossa família</button></span>
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="imagens_sobre/dog_sobre.png" alt="" class="img_dog">
+            </div>
+
+        </div>
+        </section>
+
+        <!--Nossa história-->
+        <section class="história ">
+            <div class="row margem-left margem-top">
+                <div class="col-12">
+                    <h1>Nossa História</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--Nossa missão-->
+        <section class="missao bg-roxo">
+            <div class="row margem-left margem-top">
+                <div class="col-12">
+                    <h1 class="borda-texto">Nossa Missão</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--Objetivos-->
+        <section class="objetivos">
+            <div class="row margem-left margem-top">
+                <div class="col-12">
+                    <h1 >Objetivos Alcançados</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--Nossa equipe-->
+        <section class="equipe bg-amarelo">
+            <div class="row margem-left margem-top">
+                <div class="col-12">
+                    <h1 class="borda-texto">Nossa equipe</h1>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+        
+         <!-- API Doar-->
+        <div class="row">
+           
+        <div class="pagamento">
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="UQ8AEKGWD4VHW" />
+                <input type="image" class="img_pagamento"
+                    src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+                    title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </div>
+        </div>
+        
+
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
 
     </footer>
 
@@ -122,15 +228,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
+    
+        <script src="sobre.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+
+  
 </body>
+
 </html>

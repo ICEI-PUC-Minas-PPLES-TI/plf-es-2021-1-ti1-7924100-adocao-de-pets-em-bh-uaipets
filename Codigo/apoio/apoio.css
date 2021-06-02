@@ -6,19 +6,50 @@ body{
     font-family:cursive;
 }
 
+.roxo{
+    color:#955AF5 !important;
+}
+
+.bg-roxo{
+    background-color:#955AF5 !important; ;
+}
+
 .amarelo{
-    color:rgb(221, 162, 0);
+    color:rgb(255, 198, 42);
+}
+
+.bg-amarelo{
+    background-color:rgb(255, 198, 42) ;
+}
+
+.bg-gray{
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(122, 122, 122, 0.267));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(122, 122, 122, 0.267));
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(122, 122, 122, 0.267));
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(122, 122, 122, 0.267));  
+    
 }
 .centro{
     text-align:center;
     margin-top:10px;
     margin-bottom:10px;
 }
+.centralizar{
+    margin:0 auto;
+}
 .margem-top{
     margin-top:30px;
 }
 .margem-bottom{
     margin-bottom:30px;
+}
+
+.margem-bottom-10px{
+    margin-bottom: 10px;
+}
+
+.margem-left{
+    margin-left:30px;
 }
 
 .just{
@@ -29,8 +60,22 @@ body{
     font-size: 50px;;
 }
 
+.icone-peq{
+    font-size:10px;
+}
+
+.pad{
+    padding:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
 
 /*navbar*/
+
+.navbar{
+    margin-bottom:10px;
+}
 .navbar-brand{
     color:black !important;
 }
@@ -41,6 +86,10 @@ body{
 
 .gray-borda{
     color:rgb(92, 92, 92);
+    -webkit-text-stroke: 1px white;
+}
+
+.borda-texto{
     -webkit-text-stroke: 1px white;
 }
 
@@ -59,8 +108,76 @@ body{
     }
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:991px){
     #yesmobile{
         display:none !important;
     }
 }
+
+/*doação*/
+
+.bg-dog{
+    background-image: url(imagens_apoio/dog_triste.jpg);
+    background-position: 100px;;
+}
+
+
+
+.img_pagamento{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+
+
+.titulo_pagamento{
+    text-align: center;
+    margin-top:30px;
+}
+
+.img_dogl{
+    float: right;
+    width: 100px;
+    height:auto;
+    
+}
+
+.img_dogr{
+    float: left;
+    width: 100px;
+    height:auto;
+    
+}
+
+
+
+
+/*shop*/
+
+.card-img-top{
+    height:350px;
+}
+
+.card-body{
+    height:220px;
+}
+
+.img-carrinho{
+    margin-top:10px;
+}
+
+.posicao{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-top:10px;
+}
+
+/*footer*/
+
+.footer{
+    padding:5px;
+}
+

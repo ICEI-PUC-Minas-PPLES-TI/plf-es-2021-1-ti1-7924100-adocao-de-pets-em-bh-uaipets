@@ -29,6 +29,14 @@ cep.addEventListener("blur", () => {
 //fetch()  https://viacep.com.br/ws/01001000/json/
 
 
+
+
+
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
 //Nightmode
 
 var timesClicked = 0;
@@ -41,12 +49,6 @@ function nightMode() {
     }
    
 }
-
-
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
 
 //Local Storage
 
