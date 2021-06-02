@@ -6,7 +6,7 @@ Existem apenas 170 mil animais que estão sob os cuidados das 370 ONGs e grupos 
 
 Lourenço (2020) destaca que de 2000 pessoas entrevistadas no país, 53% possuem cães e/ou gatos, sendo adotados 33% dos cães e 59% dos gatos. Além disso, grande desses animais são sem raça definida e resgatados diretamente na rua. Apenas 2% são obtidos por meio de contato com ONGs.
 
-O objetivo deste trabalho é a criação de um portal de divulgação de pets a serem adotados, que apresente ferramentas de fácil uso e que permita uma experiência personalizada e divertida para os seus usuários.
+O objetivo deste trabalho é a criação de um portal de divulgação de pets a serem adotados, que apresente ferramentas de fácil uso e que permita uma experiência personalizada e divertida para os seus usuários. AMORRRRRRRRRRRRRRRR
 
 
 ## Alunos integrantes da equipe
