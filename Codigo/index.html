@@ -77,7 +77,7 @@
                                 <a class="nav-link" href="adote/adote.html">Adote</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
+                                <a class="nav-link" href="sobre/sobre.html">Sobre</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="apoio/apoio.html">Apoio</a>
@@ -416,90 +416,37 @@
                                     class="fas fa-search"></i></button>
                         </form>
                         <div class="centro"><button class="btn btn-outline-light bg-roxo margem-top">
-                            <a href="/Localizacao/localizacao.html">Clique aqui para consultar o Mapa</a>
-                        </button>
-                    </div></div>
-                        
+                                <a href="/Localizacao/localizacao.html">Clique aqui para consultar o Mapa</a>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                     <a href="/Localizacao/localizacao.html"><img src="/imagens_index/bh.png" alt="" class="bh"></a>
-                    
+
                 </div>
             </div>
 
             <!--Sobre-->
+
             <div class="row margem-top bg2">
 
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+                <di class="container">
                     <h1 class="centro amarelo">Fique ligado!</h1>
-                    <div class="row margem-top">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado ">
-                            <img src="/imagens_index/adotado.jfif" alt="" class="borda">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
-                            <h3>Mas por que adotar?</h3>
-                            <p>Se ainda te faltam motivos, leia esta matéria</p>
-                            <a href="https://www.casapraticaqualita.com.br/noticia/6-motivos-para-adotar-um-animal-de-estimacao_a1323/1#:~:text=Adotar%20um%20animal%20%C3%A9%20uma%20grande%20responsabilidade%2C%20e,de%20fome%20e%20possivelmente%20sofrendo%20de%20maus%20tratos."
-                                class="materia"><button type="button" class="btn btn-secondary bg-roxo">Leia
-                                    mais</button></a>
+                    <div class="row">
+                        <div class="col"> 
+                            <div id="newsResults"></div>
                         </div>
                     </div>
-                    <div class="row margem-top margem-bottom">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
-                            <img src="/imagens_index/meadota.png" alt="" class="borda">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 fiqueligado">
-                            <h3>Abandono em BH</h3>
-                            <p>Por que é algo a se preocupar? Descubra mais!</p>
-                            <a href="https://www.otempo.com.br/coronavirus/pandemia-de-coronavirus-eleva-abandono-de-animais-em-belo-horizonte-alerta-ong-1.2316258"
-                                class="materia"><button type="button" class="btn btn-secondary bg-roxo">Leia
-                                    Mais</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 ms-auto">
-                    <h1 class="centro amarelo">A iniciativa</h1>
-                    <p class="just">Somos alunos do primeiro período de Engenharia de Software da PUC Minas e
-                        desenvolvemos esta
-                        aplicação como parte do estudo referente à disciplina TIAW. Nosso objetivo é prover uma
-                        aplicação que possa ajudar as pessoas a adotarem e colocarem pets para adoção, promovendo
-                        assim o aumento de animais sendo cuidados com carinho seus novos lares</p>
-
-                    <h4 class="margem-top">Alguma Sugestão?</h4>
-
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="form" placeholder="Sugestão" aria-label="Search">
-                        <button class="btn btn-outline-secondary bg-roxo white" type="submit">Enviar</button>
-                    </form>
-                    <div class="margem-top">
-                        <div class="row">
-                            <div class="col-4 centro"><i class="fab fa-facebook icone"></i></div>
-                            <div class="col-4 centro"><i class="fab fa-instagram icone"></i></div>
-                            <div class="col-4 centro"><i class="fab fa-whatsapp-square icone"></i></div>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-
-
+                </di>
+                <a href="#load" id="load" class="btn">Carregar mais notícias</a>
             </div>
-
-
-
-
     </main>
     <footer class="footer container">
         <p class="centro">Copyright 2021 - Puc Minas - Todos os direitos reservados</p>
     </footer>
-
-
-
-
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -508,7 +455,46 @@
 
     <!--src-->
     <script src="scriptmain.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="apiNoticias.js"></script>
 
+
+    <script src="sairlogin/login.js"></script>
+    <script>
+        // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
+        //if (!usuarioCorrente.login) {
+           // window.location.href = LOGIN_URL;
+        //}  //ERRO
+
+        function exibeUsuarios() {
+
+            // Popula a tabela com os registros do banco de dados
+            let listaUsuarios = '';
+            for (i = 0; i < db_usuarios.usuarios.length; i++) {
+                let usuario = db_usuarios.usuarios[i];
+                listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
+            }
+
+            // Substitui as linhas do corpo da tabela
+            document.getElementById("table-usuarios").innerHTML = listaUsuarios
+
+        }
+
+        function initPage() {
+
+            // Associa a função de logout ao botão
+            document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+            // Informa o nome do usuário logado
+            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+
+            // Lista os usuários 
+            exibeUsuarios();
+        }
+
+        // Associa ao evento de carga da página a função para verificar se o usuário está logado
+        window.addEventListener('load', initPage);
+    </script>
 
 </body>
 
