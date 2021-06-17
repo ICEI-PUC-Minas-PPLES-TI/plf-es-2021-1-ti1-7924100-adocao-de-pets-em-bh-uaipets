@@ -458,13 +458,15 @@
                     <h1 class="centro amarelo">Gerador de PET</h1>
                     <div class="row">
                         <div style="text-align: center; height: 500px;" class="col 12">
-                            <p>Selecione um desses para receber uma foto aleatória! (gifs são raros)</p>
+                            <p>Selecione um desses para receber uma foto aleatória + raça! (gifs são raros)</p>
                          
                            <button  onclick="getRandomPet('cat')" style="background-color: #955AF5;" class="btn btn-secondary" >Gato</button>
                            <button  onclick="getRandomPet('dog')" style="background-color: #955AF5;" class="btn  btn-secondary" >Cachorro</button>
     
 
-                           <div id="petField"></div>
+                           <div id="petField">
+                               <img width="250" height="250" style="margin-top: 2rem;" src="/Codigo/imagens/interrog.png" alt="">
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -493,13 +495,13 @@
             const res = await fetch(`https://api.the${dogOrCat}api.com/v1/images/search`)
             const data = await res.json()
 
-            console.log(data[0].breeds[0].name)
+            console.log(data[0].breeds.length == 0)
            
             
             const imgOutput = ` <img style="border-radius:10px; border:solid rgb(221, 162, 0); margin-top:2rem; margin:1rem" width="350" height="350" src="${data[0].url}" >
            
          
-             <p>Raça: ${data[0].breeds[0].name}</p>`
+             <p>${data[0].breeds.length != 0 ? data[0].breeds[0].name : ''}</p>`
          
            
             document.getElementById('petField').innerHTML=imgOutput
