@@ -1,0 +1,94 @@
+/*geral*/
+
+body{
+    margin-top: 20px;
+    font-family:Poppins, sans-serif;
+}
+
+.main {
+    padding: 15px;
+}
+
+.sidebar{
+    background-color: purple;
+    color: white;
+    height: 100%;
+}
+
+.sidebar a{
+    margin-left: 10px;
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    background-color: whitesmoke;
+}
+
+.amarelo{
+    color:rgb(221, 162, 0);
+}
+.centro{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.margem-top{
+    margin-top:30px;
+}
+.margem-bottom{
+    margin-bottom:30px;
+}
+
+.just{
+    text-align: justify;
+}
+
+.icone{
+    font-size: 50px;;
+}
+
+
+/*navbar*/
+.navbar-brand{
+    color:black !important;
+}
+
+.fa-moon, .fa-bell, .fa-cog, .white{
+    color:white;
+}
+
+.gray-borda{
+    color:rgb(92, 92, 92);
+    -webkit-text-stroke: 1px white;
+}
+
+.navbar-brand{
+    font-size:30px;
+}
+
+#horizontal, ul li{
+    list-style: none !important;
+    display:inline !important;
+}
+
+@media screen and (max-width:991px){
+    #nomobile{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width:991px){
+    #yesmobile{
+        display:none !important;
+    }
+}
