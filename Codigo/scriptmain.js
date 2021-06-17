@@ -105,3 +105,57 @@ function incluirDados (){
 }
 // Configura os botões
 document.getElementById ('btnEnviar').addEventListener ('click', incluirDados);
+
+//compartilhar
+gatoshare.addEventListener('click', event => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'WebShare API Demo',
+      url: 'http://127.0.0.1:5500/UAIPET/index.html#'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+  } else {
+    // fallback
+  }
+});
+passaroshare.addEventListener('click', event => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'WebShare API Demo',
+      url: 'http://127.0.0.1:5500/UAIPET/index.html#'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+  } else {
+    // fallback
+  }
+});
+hamstershare.addEventListener('click', event => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'WebShare API Demo',
+      url: 'http://127.0.0.1:5500/UAIPET/index.html#'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+  } else {
+    // fallback
+  }
+});
+caoshare.addEventListener('click', event => {
+  if (navigator.share) {
+    navigator.share({
+      title: 'WebShare API Demo',
+      url: 'http://127.0.0.1:5500/UAIPET/index.html#'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(console.error);
+  } else {
+    // fallback
+  }
+});

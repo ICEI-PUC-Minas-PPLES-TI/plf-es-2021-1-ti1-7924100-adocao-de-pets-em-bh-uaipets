@@ -50,7 +50,10 @@ body{
     font-size:10px;
 }
 
-
+/*sharethis(compartilhamento*/
+.sharethis-sticky-share-buttons{
+    margin-top: 35rem;
+}
 /*navbar*/
 
 .navbar{

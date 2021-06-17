@@ -1,0 +1,128 @@
+/*geral*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family:Poppins, sans-serif;
+    
+}
+
+
+.tabencontros{
+
+    width: 800px !important;
+}
+.amarelo{
+    color:rgb(221, 162, 0);
+}
+
+.roxo{
+    color:#955AF5 !important;
+}
+.black{
+    color:black !important;
+}
+
+.centro{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.margem-top{
+    margin-top:30px;
+}
+.margem-bottom{
+    margin-bottom:30px;
+}
+
+.margem-bottom-10px{
+    margin-bottom: 10px;
+}
+
+.just{
+    text-align: justify;
+}
+
+.icone{
+    font-size: 50px;;
+}
+
+
+/*Background*/
+
+.bg-roxo{
+    background-color:#955AF5 !important;
+}
+
+
+/*navbar*/
+.navbar-brand{
+    color:black !important;
+}
+
+.fa-moon, .fa-bell, .fa-cog, .white{
+    color:white;
+}
+
+.gray-borda{
+    color:rgb(92, 92, 92);
+    -webkit-text-stroke: 1px white;
+}
+
+.navbar-brand{
+    font-size:30px;
+}
+
+#horizontal, ul li{
+    list-style: none !important;
+    display:inline !important;
+}
+
+@media screen and (max-width:991px){
+    #nomobile{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width:991px){
+    #yesmobile{
+        display:none !important;
+    }
+}
+
+/*card*/
+
+.card-img-top{
+    height:300px;
+   
+}
+
+.hover-white:hover{
+    color:rgb(221, 162, 0) !important;
+}
+
+/*modal*/
+.imagem-modal{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.botao-adotar{
+    color:white;
+    text-decoration: none;
+}
+
+.botao-adotar:hover{
+    color:white;
+}
+
+.btn-roxo:hover{
+ background-color: #804ed1 !important ;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: rgb(221, 162, 0);
+    padding:5px;
+    margin-top:10px;
+}
