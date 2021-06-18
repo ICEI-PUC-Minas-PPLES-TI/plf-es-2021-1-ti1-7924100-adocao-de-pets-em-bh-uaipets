@@ -96,11 +96,11 @@
                             <span class="dropdown">
                                 <button class="btn btn-warning dropdown-toggle white" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-user-circle"></i> Alberto Silva
+                                    <i class="fas fa-user-circle"></i> <span class="name-text">Alberto Silva</span>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item" href="#">Chat</a></li>
-                                    <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                                    <li><a class="dropdown-item" href="#">Perfil</a></li>
                                     <li><a class="dropdown-item" href="../sairlogin/sairlogin.html">Sair</a></li>
                                 </ul>
                             </span>
@@ -120,10 +120,10 @@
                         <div class="card-body">
                             <img src="user5.jpg" class="rounded-circle" width="150">
                             <div class="mt-3">
-                                <h3>Alberto Silva</h3>
-                                <a href="">Página Inicial</a>
-                                <a href="">Chat</a>
-                                <a href="">Sobre</a>
+                                <h3 class="name-text">Alberto Silva</h3>
+                                <a href="/index.html">Página Inicial</a>
+                                <a href="/chat/chat.html">Chat</a>
+                                <a href="/sobre/sobre.html">Sobre</a>
                                 <a href="">Logout</a>
                             </div>
                         </div>
@@ -133,7 +133,8 @@
                     <div class="card mb-3 content">
                         <div class="profile">
                             <h1 class="m-3 pt-3">Perfil</h1>
-                            <button onclick="changeProfile()" id="changesave" class="button">Editar Perfil</button>
+                            <button onclick="changeProfile()" class="info-text button" id="changeProf">Editar Perfil</button>
+                            <button onclick="saveProfile()" class="info-input button" id="saveProf">Salvar Perfil</button>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -141,7 +142,8 @@
                                     <h5>Nome completo</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span id="nameInput">Alberto Silva</span>
+                                    <span id="name" class="info-text name-text"></span>
+                                    <input class="info-input space" type="text" id="nameValue" value=""  placeholder="Digite seu nome">
                                 </div>
                             </div>
                             <hr>
@@ -150,7 +152,8 @@
                                     <h5>E-mail</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span id="emailInput">albertosilva@email.com</span>
+                                    <span id="email" class="info-text"></span>
+                                    <input class="info-input space" type="email" id="emailValue" value="" placeholder="Digite seu email">
                                 </div>
                             </div>
                             <hr>
@@ -159,7 +162,8 @@
                                     <h5>Telefone</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span id="phoneInput">(31) 91234-5678</span>
+                                    <span id="phone" class="info-text"></span>
+                                    <input class="info-input space" type="tel" id="phoneValue" value="" placeholder="Digite seu telefone">
                                 </div>
                             </div>
                             <hr>
@@ -168,7 +172,8 @@
                                     <h5>Endereço</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span id="addressInput">Rua Sapucaí, 33 - Floresta</span>
+                                    <span id="address" class="info-text"></span>
+                                    <input class="info-input space" type="text" id="addressValue" value="" placeholder="Digite seu endereço">
                                 </div>
                             </div>
                             <hr>
@@ -177,7 +182,8 @@
                                     <h5>Bio</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    <span id="about"></span>
+                                    <span id="about" class="info-text"></span>
+                                    <textarea class="info-input space" id="aboutValue" value="" placeholder="Digite sobre você"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -195,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                </>
+                </div>
             </div>
 
 
