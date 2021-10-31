@@ -1,0 +1,35 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Uai Pets
+authors:
+  - family-names: Mairinque
+    given-names: João Pedro
+  - family-names: Dinelli Salvático de Paula Kraft
+    given-names: Fabiana
+  - family-names: Ana Luiza
+    given-names: Machado Alves
+  - family-names: Caetano Dias Costa
+    given-names: Enzo
+  - family-names: Cassimiro Soares de Mello
+    given-names: Matheus
+  - family-names: Martins Fonseca da Cruz
+    given-names: Miguel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Felipe Dias Ferreira da Rocha
+    given-names: Roberto
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Ricardo dos Santos Machado
+    given-names: Will
+keywords:
+  - Adoção
+  - Animais de Estimação
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti1-7924100-adocao-de-pets-em-bh-uaipets
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2021-06-20
